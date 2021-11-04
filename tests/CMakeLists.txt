@@ -4,5 +4,5 @@ set(
 )
 
 add_executable(TestMain ${%{PROJECT_NAME}_TEST_SOURCES})
-target_link_libraries(TestMain PRIVATE DocTest)
+target_link_libraries(TestMain PRIVATE doctest::doctest)
 add_test(NAME MainTest COMMAND TestMain)
